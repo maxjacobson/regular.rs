@@ -1,7 +1,12 @@
 [package]
-name = "regular"
+name = "regular-derive"
 version = "0.1.0"
 authors = ["Max Jacobson <max@hardscrabble.net>"]
 
+[lib]
+proc-macro = true
+
 [dependencies]
-regular-derive = { path = "regular-derive" }
+syn = "0.11.4"
+quote = "0.3.12"
+
